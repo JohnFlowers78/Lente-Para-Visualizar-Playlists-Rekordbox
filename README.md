@@ -27,5 +27,22 @@ O pendrive original **nunca** é aberto para escrita. Os testes usam uma cópia 
 
 ```
 python -m venv .venv
-.venv\Scripts\python explorar.py E:\ --conferir-arquivos
+.venv\Scripts\pip install PySide6
 ```
+
+- Janela: clique duplo em `Abrir Lente.bat` (abre o último disco usado; Ctrl+O escolhe outro).
+- Terminal: `.venv\Scripts\python explorar.py E:\ --conferir-arquivos`
+
+## Na janela
+
+- Esquerda: a coleção inteira e as playlists. Direita: as músicas, na ordem da playlist.
+- Arrastar músicas ou playlists inteiras para o Explorer: **o Windows copia** (só cópia, nunca mover).
+- Ctrl+C e depois Ctrl+V no Explorer faz o mesmo.
+- Ctrl+F busca, Ctrl+N abre outra janela, clique duplo toca a música, botão direito → "Mostrar no Explorer".
+- Música em vermelho = está no banco mas o arquivo não está no disco.
+
+## Alvo: o pendrive do club
+
+O pendrive de destino precisa tocar em qualquer CDJ/XDJ, então tem que levar
+os dois bancos (`export.pdb` e `exportLibrary.db`), além do áudio e da análise.
+O Windows copia os arquivos; a Lente grava os bancos do destino. Ainda não feito.
